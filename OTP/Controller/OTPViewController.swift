@@ -14,38 +14,40 @@ class OTPViewController: UIViewController, OTPFieldDelegete, UITextFieldDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         otpView.backgroundColor = .clear
-        fieldsWithCursor(Status: true)
+        createOTPField(Status: true)
     }
 }
 
 extension OTPViewController {
     
-    func fieldsWithCursor(Status: Bool){
+    func createOTPField(Status: Bool){
         if Status{
-            
-            let stackView = OTPStackView()
-           
-            //Customisation
-            stackView.numberOfFields = 4
-            stackView.isBottomLineEnabled = false
-            stackView.backgroundColor = .white
-            stackView.textBackgroundColor = .systemPink
-            stackView.activeFieldBorderColor = .white
-            stackView.inactiveFieldBorderColor = .white
-           
-            //Add textFields
-            stackView.setupStackView()
-            stackView.addOTPFields()
-            self.otpView.addSubview(stackView)
-            stackView.centerXAnchor.constraint(equalTo: otpView.centerXAnchor).isActive = true
-            stackView.centerYAnchor.constraint(equalTo: otpView.centerYAnchor).isActive = true
-            
+            enterOtpWithSequence(numOfFields: 4)
         } else {
-            createOTPField(numOfFields: 4)
+            enterOtpWithoutSequence(numOfFields: 4)
         }
     }
     
-    func createOTPField(numOfFields: UInt) {
+    func enterOtpWithSequence(numOfFields: UInt) {
+        let stackView = OTPStackView()
+        
+        //Customisation
+        stackView.numberOfFields = 4
+        stackView.isBottomLineEnabled = false
+        stackView.backgroundColor = .white
+        stackView.textBackgroundColor = .systemPink
+        stackView.activeFieldBorderColor = .white
+        stackView.inactiveFieldBorderColor = .white
+        
+        //Add textFields
+        stackView.setupStackView()
+        stackView.addOTPFields()
+        self.otpView.addSubview(stackView)
+        stackView.centerXAnchor.constraint(equalTo: otpView.centerXAnchor).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: otpView.centerYAnchor).isActive = true
+    }
+    
+    func enterOtpWithoutSequence(numOfFields: UInt) {
         
         if numOfFields == 4 || numOfFields == 6 {
             
