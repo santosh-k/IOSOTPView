@@ -32,7 +32,7 @@ extension OTPViewController {
         let stackView = OTPStackView()
         
         //Customisation
-        stackView.numberOfFields = 4
+        stackView.numberOfFields = Int(numOfFields)
         stackView.isBottomLineEnabled = false
         stackView.backgroundColor = .white
         stackView.textBackgroundColor = .systemPink
