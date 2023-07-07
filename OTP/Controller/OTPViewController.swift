@@ -14,14 +14,14 @@ class OTPViewController: UIViewController, OTPFieldDelegete, UITextFieldDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         otpView.backgroundColor = .clear
-        createOTPField(Status: true)
+        createOTPField(withSequence: true)
     }
 }
 
 extension OTPViewController {
     
-    func createOTPField(Status: Bool){
-        if Status{
+    func createOTPField(withSequence: Bool){
+        if withSequence{
             enterOtpWithSequence(numOfFields: 4)
         } else {
             enterOtpWithoutSequence(numOfFields: 4)
