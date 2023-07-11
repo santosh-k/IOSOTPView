@@ -2,13 +2,25 @@
 
 
 
-https://github.com/santosh-k/Swift-otp-View/assets/2150322/ed9175a4-e310-485b-896b-0e61d2a8cdb4
+
+https://github.com/santosh-k/Swift-otp-View/assets/2150322/e39736d2-e12b-4880-aebe-ebfeae4f73b1
 
 
 
-https://github.com/santosh-k/Swift-otp-View/assets/2150322/5b04f2b9-ce4d-4ebb-a452-d93101630d24
+
+https://github.com/santosh-k/Swift-otp-View/assets/2150322/7a29aa39-c6a0-4f1f-9860-0ed0078c8d79
 
 
 
-https://github.com/santosh-k/Swift-otp-View/assets/2150322/e39a18da-a2fc-49c0-bc33-d50745e7391c
+
+
+
+https://github.com/santosh-k/Swift-otp-View/assets/2150322/f4c9a922-9342-4be3-bd31-078226b7fe27
+
+
+
+
+
+
+
 
